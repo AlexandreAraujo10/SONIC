@@ -8,13 +8,16 @@
     width: 80%;
     height: 520px;
     border: 2px solid #ccc;
+    margin: auto;
     position: relative;  /* essa conf. respeita todo enquadramento e config. acima */
+    overflow: hidden;
 }
 
 .sonic {
     bottom: 110px;
     position: absolute; /* é importante colocar em todas as imgs que forem adicionadas, não interferem em nada */
     width: 150px; 
+   
 }
 
 .jump {
