@@ -1,2 +1,1 @@
-# SONIC
- Game simples 
+!
