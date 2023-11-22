@@ -1,5 +1,6 @@
 const sonic = document.querySelector(".sonic");
 const eggman = document.querySelector(".eggman");
+const fundo = document.querySelector(".fundo");
 
 const jump = () => {
     sonic.classList.add("jump");
@@ -17,8 +18,15 @@ const loop = setInterval(() => {
     .getComputedStyle(sonic)
     .bottom.replace("px", "");
 
-    if (eggmanPosition < 110 && eggmanPosition > 0 && sonicPosition < 220) {
-        eggman.Style.animation = "none";
+    if (eggmanPosition < 110 && eggmanPosition > 0 && sonicPosition < 220) { /* se o sonic não pular menos de 110px de distância e mais que 0px e mais alto que 220px, ele perde */
+        eggman.style.animation = "none";
+        eggman.style.left = `${eggmanPosition}px`;
+
+        sonic.style.animation = "none";
+        sonic.src ="Arquivos/Sonic-Loss.gif";
+        sonic.style.width = "240px"  /* aumentar um pouco o tamanho do sonic morto(gameover) */
+       
+        fundo.src = "Arquivos/GameoverSMB-1.png"
     }
 }, 10);
 
