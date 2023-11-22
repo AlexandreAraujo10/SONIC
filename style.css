@@ -15,6 +15,9 @@
     bottom: 110px;
     position: absolute; /* é importante colocar em todas as imgs que forem adicionadas, não interferem em nada */
     width: 150px; 
+}
+
+.jump {
     animation: 1s sonic_animation infinite ease-out;  /* (ease-out)é p/ tirar qualquer outra animação que não faça parte */
 }
 
